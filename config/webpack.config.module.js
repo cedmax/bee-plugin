@@ -1,22 +1,35 @@
-const HtmlWebpackPlugin = require('html-webpack-plugin')
+/* eslint-disable */
+var webpack = require('webpack')
 
 module.exports = {
   entry: './src/bee.js',
   output: {
-    path: './build',
-    filename: 'bundle.js',
+    path: './dist',
+    filename: 'index.js',
   },
-  loaders: [
-    {
-      test: /\.js$/,
-      exclude: /(node_modules|bower_components)/,
-      loader: 'babel-loader',
-      query: {
-        presets: ['es2015']
+  module: {
+    loaders: [
+      {
+        test: /\.js$/,
+        exclude: /(node_modules|bower_components)/,
+        loader: 'babel-loader?presets[]=es2015'
       }
-    }
-  ],
+    ]
+  },
   plugins: [
-    new HtmlWebpackPlugin(),
+    new webpack.optimize.OccurrenceOrderPlugin(),
+    new webpack.optimize.UglifyJsPlugin({
+      compress: {
+        screw_ie8: true,
+        warnings: false
+      },
+      mangle: {
+        screw_ie8: true
+      },
+      output: {
+        comments: false,
+        screw_ie8: true
+      }
+    }),
   ]
 }
