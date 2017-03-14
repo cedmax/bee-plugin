@@ -11,7 +11,7 @@ BEE have a free version so you can embed the editor anywhere, regardless of pric
 ## How to use it
 
 - go to developer portal [https://developers.beefree.io/signup]
-- sing in the free plan
+- sign up with the free plan
 - create your application
 - get clientId and clientSecret
 
