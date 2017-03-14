@@ -1,5 +1,5 @@
 # BEE plugin wrapper [![Build Status](https://travis-ci.org/samuv/bee-plugin.svg?branch=master)](https://travis-ci.org/samuv/bee-plugin.svg?branch=master)
-A really simple module for use the BEE plugin [http://beefree.io/plugin/]
+A really simple module for use the BEE plugin ['http://beefree.io/plugin/'](http://beefree.io/plugin/)
 
 ## What the hell is BEE?
 Long story short is a drag-&-drop editor for responsive design emails.
@@ -10,24 +10,25 @@ BEE have a free version so you can embed the editor anywhere, regardless of pric
 
 ## How to use it
 
-- go to developer portal [https://developers.beefree.io/signup]
+- go to developer portal ['https://developers.beefree.io/signup'](https://developers.beefree.io/signup)
 - sign up with the free plan
 - create your application
 - get clientId and clientSecret
 
 ## Demo
 
-It's free to use on [https://beefree.io](https://beefree.io): you don't even need to create an account of any kind.
+It's free to use on ['https://beefree.io'](https://beefree.io): you don't even need to create an account of any kind.
 
 
 ## Do you want try out an integration locally?
 
 1. Install [Node][node] and [npm][npm].
-2. `npm install` or `yarn install`
-3. put your clientId and clientSecret on ./config/integrationKeys.js
-4. `npm start`
-5. Open `http://localhost:3030`.
-6. Have fun!
+2. clone this repository
+3. `npm install` or `yarn install` in the folder cloned
+4. put your clientId and clientSecret on ./config/integrationKeys.js
+5. `npm start`
+6. Open `http://localhost:3030`.
+7. Have fun!
 
 
 ## You want this module for your project?
@@ -45,7 +46,7 @@ yarn add bee-plugin
 ```
 
 ## Get token
-> You need to be authorize to start with the editor, learn more ['http://help.beefree.io/hc/en-us/articles/202991192-Initializing-the-plugin'](here)
+> You need to be authorize to start with the editor, learn more [here](http://help.beefree.io/hc/en-us/articles/202991192-Initializing-the-plugin)
 
 It is not raccomended to do it client side but is possible with the module, just call getToken
 
@@ -69,7 +70,7 @@ const beeTest = new Bee(token)
 ```
 
 ## Configuring the editor
-> It required a configuration for using the editor, learn more ['http://help.beefree.io/hc/en-us/articles/202991192-Initializing-the-plugin'](here)
+> It required a configuration for using the editor, learn more [here](http://help.beefree.io/hc/en-us/articles/202991192-Initializing-the-plugin)
 
 Here an example of configuration, read the official documentation for extended
 
@@ -96,9 +97,9 @@ const beeConfig = {
 ```
 
 ## Template JSON
-> It required a initial template for start editing, learn more ['http://help.beefree.io/hc/en-us/articles/203135882-Sample-code-and-templates'](here)
+> It required a initial template for start editing, learn more [here](http://help.beefree.io/hc/en-us/articles/203135882-Sample-code-and-templates)
 
-Some json avaible here  ['https://github.com/BEE-Plugin/BEE-FREE-templates'](https://github.com/BEE-Plugin/BEE-FREE-templates)
+Some json avaible here  [https://github.com/BEE-Plugin/BEE-FREE-templates](https://github.com/BEE-Plugin/BEE-FREE-templates)
 
 ## Methods
 
