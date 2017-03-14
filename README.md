@@ -115,10 +115,8 @@ const template = {...}
 const beeTest = new Bee()
 
 beeTest.getToken(clientId, clientSecret)
-.then(() => {
   .then((res) => res.json()) //return fetch promise
   .then((template) => beeTest.start(beeConfig, template))
-})
 
 ```
 
