@@ -1,6 +1,6 @@
 {
   "name": "bee-plugin",
-  "version": "1.0.3",
+  "version": "1.0.5",
   "description": "wrapper of bee-plugin",
   "main": "dist/index.js",
   "files": [
@@ -46,6 +46,7 @@
   },
   "dependencies": {
     "html-webpack-plugin": "^2.28.0",
-    "load-script": "^1.0.0"
+    "load-script": "^1.0.0",
+    "whatwg-fetch": "^2.0.3"
   }
 }

@@ -2,7 +2,7 @@
 var webpack = require('webpack')
 
 module.exports = {
-  entry: './src/bee.js',
+  entry: ['whatwg-fetch', './src/bee.js'],
   output: {
     path: './dist',
     filename: 'index.js',

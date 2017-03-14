@@ -3,7 +3,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 const paths = require('./paths')
 
 module.exports = {
-  entry: './src/integration.js',
+  entry: ['whatwg-fetch', './src/integration.js'],
   devtool: 'eval-source-map',
   output: {
     filename: 'bundle.js',
