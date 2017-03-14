@@ -41,7 +41,7 @@ npm install --save bee-plugin
 ```
 or
 ```sh
-yarn add --dev bee-plugin
+yarn add bee-plugin
 ```
 
 ## Get token
